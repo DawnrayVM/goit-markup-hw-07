@@ -1,0 +1,47 @@
+/* футер */
+
+.footer {
+  background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress-container {
+  color: var(--pure-white-color);
+}
+
+.footer--logo {
+  color: var(--pure-white-color);
+}
+.address {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--pure-white-color);
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+
+.adress__text {
+  display: block;
+}
+
+.address__item {
+  display: block;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--footer-text-color);
+  margin-top: 9px;
+}
+
+.address-item:hover,
+.address-item:focus {
+  color: var(--main-accent);
+  text-decoration: underline;
+}
+.adress-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}

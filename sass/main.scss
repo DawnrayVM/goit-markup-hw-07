@@ -1,6 +1,59 @@
-body {
-  color: var(--secondary-text-color);
-  background-color: var(--pure-white-color);
-  font-family: Roboto;
-  letter-spacing: 0.03em;
+$pure-white-color: #ffffff;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$main-accent: #2196f3;
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$secondary-bg-color: #2f303a;
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+// body {
+//   color: $primary-text-color;
+// }
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px 0 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  /*outline: 2px solid tomato;*/
+}
+.justify-center {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  text-decoration: none;
+  color: $primary-text-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  inline-size: 1.2;
+}
+
+.accent {
+  color: $main-accent;
 }
