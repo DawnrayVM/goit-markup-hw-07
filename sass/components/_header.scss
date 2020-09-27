@@ -1,5 +1,5 @@
 .page-header {
-  background-color: var(--pure-white-color);
+  background-color: $pure-white-color;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
@@ -19,66 +19,62 @@
 
 .main-nav__link {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   margin: 0px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
 
-.main-nav__link:hover,
-.main-nav__link:focus {
-  color: var(--main-accent);
+  &:hover,
+  &:focus {
+    color: $main-accent;
+  }
 }
 
 .link--current {
-  color: var(--main-accent);
+  color: $main-accent;
   position: relative;
-}
 
-.link--current:after {
-  content: '';
-  position: absolute;
-  background-color: var(--main-accent);
-  height: 4px;
-  width: 100%;
-  border-radius: 4px;
-  left: 0;
-  bottom: -31px;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $main-accent;
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    left: 0;
+    bottom: -31px;
+  }
 }
 
 .header-contacts__link {
-  text-decoration: none;
-  font-family: Roboto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
 
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-  color: var(--main-accent);
-  text-decoration: underline;
+  &:hover,
+  &:focus {
+    color: $main-accent;
+    text-decoration: underline;
+  }
 }
 
 .header-contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-.header-contacts__link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.header-contacts__link:hover .header-contacts__icon,
-.header-contacts__link:focus .header-contacts__icon {
-  fill: var(--main-accent);
-}
 
 .header-contacts__icon {
   display: inline-block;
   margin-right: 10px;
-  fill: #757575;
+  fill: $secondary-text-color;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+  .header-contacts__link:hover &,
+  .header-contacts__link:focus & {
+    fill: $main-accent;
+  }
 }
