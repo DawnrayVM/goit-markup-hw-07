@@ -21,21 +21,21 @@ body {
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 1600px, 1600px;
-}
 
-.hero__container {
-  text-align: center;
-  width: 696px;
-}
+  &__container {
+    text-align: center;
+    width: 696px;
+  }
 
-.hero__title {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 44px;
-  color: $pure-white-color;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  &__title {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 44px;
+    color: $pure-white-color;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
 }
 
 .btn--hero {

@@ -16,26 +16,26 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
 
-.features__title {
-  color: $primary-text-color;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-}
+  &__title {
+    color: $primary-text-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+  }
 
-.features__text {
-  font-weight: 400;
-  margin-top: 10px;
-  line-height: 1.71;
-}
+  &__text {
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 1.71;
+  }
 
-.features__grid {
-  margin-right: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 4);
+  &__grid {
+    margin-right: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 4);
 
-  &:nth-child(4n) {
-    margin-right: 0px;
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
   }
 }
